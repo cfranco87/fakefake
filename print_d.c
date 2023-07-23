@@ -29,6 +29,10 @@ int print_d(va_list args)
 			digit[p++] = '0' + (num % 10) * -1;
 			num = -(num / 10);
 		}
+		else
+		{
+			num = -num;
+		}
 	}
 	do {
 		digit[p++] = '0' + (num % 10);
